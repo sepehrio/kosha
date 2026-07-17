@@ -1,11 +1,11 @@
 {
-  "version": "1.2.0",
-  "url": "https://github.com/sepehrio/kosha/releases/download/v1.2.0/Kosha-Setup-1.2.0.exe",
+  "version": "1.2.1",
+  "url": "https://github.com/sepehrio/kosha/releases/download/v1.2.1/Kosha-Setup-1.2.1.exe",
   "latest_url": "https://github.com/sepehrio/kosha/releases/latest/download/Kosha-Setup.exe",
   "releases_page": "https://github.com/sepehrio/kosha/releases/latest",
-  "sha256": "8f2e31f9fc833e38440d7e24f15a553273d5604bbc4462912dffac43d3283cb1",
-  "notes": "Kosha 1.2.0 - school management setup",
+  "sha256": "813fa43a35b81ea2450a742aac26b7c9564e4fa716d057e67b7f174cb4c92057",
+  "notes": "رفع هشدار WebView2 هنگام نصب؛ تشخیص بهتر Runtime",
   "mandatory": false,
-  "filename": "Kosha-Setup-1.2.0.exe",
+  "filename": "Kosha-Setup-1.2.1.exe",
   "filename_latest": "Kosha-Setup.exe"
 }

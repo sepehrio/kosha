@@ -7,7 +7,7 @@
 - **لینک ثابت Setup:** [Kosha-Setup.exe](https://github.com/sepehrio/kosha/releases/latest/download/Kosha-Setup.exe)
 - **صفحه آخرین ریلیز:** [releases/latest](https://github.com/sepehrio/kosha/releases/latest)
 
-نسخه فعلی روی `main/latest.json`: **1.2.0**
+نسخه فعلی روی `main/latest.json`: **1.2.1**
 
 ## برای توسعه‌دهنده
 
