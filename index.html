@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>کوشا — سامانه مدیریت مدرسه و آموزشگاه</title>
-  <meta name="description" content="کوشا سامانه مدیریت مدرسه و آموزشگاه برای مدیران و منشی‌ها. دانش‌آموز، شهریه، نمرات، حضور و حقوق — همه در یک نرم‌افزار ویندوزی فارسی." />
-  <meta property="og:title" content="کوشا — سامانه مدیریت مدرسه و آموزشگاه" />
-  <meta property="og:description" content="اگر هنوز با اکسل و دفتر جداگانه کار می‌کنید، کوشا همه را یکجا جمع می‌کند." />
+  <title>کوشا — مدیریت آسان مدرسه و آموزشگاه</title>
+  <meta name="description" content="کوشا نرم‌افزار فارسی مدیریت مدرسه و آموزشگاه برای مدیران، منشی‌ها، معلمان و اساتید. شهریه، حضور، نمرات و حقوق را در یک جا داشته باشید." />
+  <meta property="og:title" content="کوشا — مدیریت آسان مدرسه و آموزشگاه" />
+  <meta property="og:description" content="به‌جای چند فایل اکسل و دفتر جداگانه، همه کار مدرسه را با یک برنامه ساده انجام دهید." />
   <meta property="og:locale" content="fa_IR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -96,12 +96,12 @@
     <div class="wrap topbar__inner">
       <a class="brand" href="#top">کوشا</a>
       <nav class="topbar__nav" aria-label="منوی اصلی">
-        <a href="#scenarios">سناریو</a>
+        <a href="#scenarios">نوع مدرسه</a>
         <a href="#features">امکانات</a>
         <a href="#install">نصب</a>
         <a class="btn btn--sm btn--solid" href="https://github.com/sepehrio/kosha/releases/latest/download/Kosha-Setup.exe">
           <svg class="ico" width="16" height="16"><use href="#i-download"/></svg>
-          دانلود
+          دانلود رایگان
         </a>
       </nav>
     </div>
@@ -114,19 +114,19 @@
       <div class="wrap hero__layout">
         <div class="hero__copy reveal">
           <p class="hero__brand" id="hero-brand">کوشا</p>
-          <h1 class="hero__title">آمده است</h1>
+          <h1 class="hero__title">کار مدرسه را آسان می‌کند</h1>
           <p class="hero__lead">
-            سامانه مدیریت مدرسه و آموزشگاه برای مدیران و منشی‌ها —
-            ساده، فارسی و یکجا.
+            برای مدیر، منشی، معلم و استاد آموزشگاه —
+            شهریه، حضور، نمرات و حقوق را در یک برنامه فارسی ببینید و مدیریت کنید.
           </p>
           <div class="hero__actions">
             <a class="btn btn--solid btn--lg" href="https://github.com/sepehrio/kosha/releases/latest/download/Kosha-Setup.exe">
               <svg class="ico" width="18" height="18"><use href="#i-download"/></svg>
-              دانلود برای ویندوز
+              همین حالا دانلود کنید
             </a>
-            <a class="btn btn--ghost btn--lg" href="#features">مشاهده امکانات</a>
+            <a class="btn btn--ghost btn--lg" href="#features">ببینید چه کارهایی می‌کند</a>
           </div>
-          <p class="hero__meta">نصب یک‌مرحله‌ای · تاریخ شمسی · رابط راست‌چین</p>
+          <p class="hero__meta">روی ویندوز نصب می‌شود · فارسی و تاریخ شمسی</p>
         </div>
 
         <div class="hero__stage reveal reveal--delay" aria-hidden="true">
@@ -172,10 +172,11 @@
 
     <section class="problem" aria-labelledby="problem-title">
       <div class="wrap problem__inner reveal">
-        <h2 id="problem-title">همه چیز در یک جا</h2>
+        <h2 id="problem-title">دیگر دنبال چند دفتر و فایل نگردید</h2>
         <p>
-          اگر هنوز دانش‌آموزان، شهریه، نمرات و حقوق را با چند فایل اکسل و دفتر جداگانه
-          مدیریت می‌کنید، کوشا همه را یکجا جمع می‌کند.
+          خیلی‌ها هنوز لیست دانش‌آموز، شهریه، حضور و نمرات را در اکسل و دفتر جدا
+          نگه می‌دارند. با کوشا همه این‌ها کنار هم است؛ سریع‌تر پیدا می‌کنید و کمتر
+          چیزی از قلم می‌افتد.
         </p>
         <div class="problem__chips" aria-hidden="true">
           <span class="chip chip--off">اکسل شهریه</span>
@@ -192,45 +193,45 @@
     <section class="scenarios" id="scenarios" aria-labelledby="scenarios-title">
       <div class="wrap">
         <header class="section-head reveal">
-          <h2 id="scenarios-title">مناسب مدرسه و آموزشگاه</h2>
-          <p>سناریو را انتخاب کنید تا فقط بخش‌های لازم فعال شوند.</p>
+          <h2 id="scenarios-title">مدرسه شما چه شکلی است؟</h2>
+          <p>نوع مدرسه یا آموزشگاه را انتخاب کنید تا فقط همان بخش‌هایی که لازم دارید دیده شود.</p>
         </header>
         <div class="scenario-grid">
           <article class="scenario reveal">
             <div class="scenario__icon"><svg width="26" height="26"><use href="#i-home"/></svg></div>
             <h3>ساده</h3>
-            <p class="scenario__tag">مالی و پایه</p>
-            <p>دانش‌آموز، کلاس و شهریه — شروع سریع بدون برنامه و حضور.</p>
+            <p class="scenario__tag">شروع سریع</p>
+            <p>دانش‌آموز، کلاس و شهریه — مناسب وقتی فقط کارهای مالی و پایه را می‌خواهید.</p>
           </article>
           <article class="scenario reveal">
             <div class="scenario__icon"><svg width="26" height="26"><use href="#i-students"/></svg></div>
             <h3>مدرسه ابتدایی</h3>
-            <p class="scenario__tag">معلم کلاس</p>
-            <p>زنگ مدرسه، حضور و غیاب و کارنامه با معلم کلاس.</p>
+            <p class="scenario__tag">با معلم کلاس</p>
+            <p>برنامه با زنگ مدرسه، حضور و غیاب و کارنامه برای کلاس‌های ابتدایی.</p>
           </article>
           <article class="scenario reveal">
             <div class="scenario__icon"><svg width="26" height="26"><use href="#i-grad"/></svg></div>
-            <h3>راهنمایی / دبیرستان</h3>
-            <p class="scenario__tag">معلم هر درس</p>
-            <p>برنامه، حضور، تعطیلات، کارنامه و کلاس جبرانی.</p>
+            <h3>راهنمایی و دبیرستان</h3>
+            <p class="scenario__tag">معلم هر درس جدا</p>
+            <p>برنامه هفتگی، حضور، تأخیر، تعطیلات، کارنامه و کلاس جبرانی.</p>
           </article>
           <article class="scenario scenario--active reveal">
             <div class="scenario__icon"><svg width="26" height="26"><use href="#i-building"/></svg></div>
             <h3>آموزشگاه</h3>
-            <p class="scenario__tag">ساعت شروع کلاس</p>
-            <p>برنامه بر اساس ساعت شروع و اصطلاحات قابل تنظیم.</p>
+            <p class="scenario__tag">کلاس خصوصی و آزاد</p>
+            <p>برنامه با ساعت شروع کلاس؛ واژه‌ها هم قابل تغییر است (مثلاً هنرجو / استاد).</p>
           </article>
           <article class="scenario reveal">
             <div class="scenario__icon"><svg width="26" height="26"><use href="#i-apps"/></svg></div>
             <h3>پیشرفته</h3>
-            <p class="scenario__tag">همه بخش‌ها</p>
-            <p>تمام امکانات برای مجتمع‌های آموزشی بزرگ.</p>
+            <p class="scenario__tag">همه امکانات</p>
+            <p>برای مدرسه‌ها و مجتمع‌هایی که تقریباً از همه بخش‌ها استفاده می‌کنند.</p>
           </article>
           <article class="scenario reveal">
             <div class="scenario__icon"><svg width="26" height="26"><use href="#i-sliders"/></svg></div>
-            <h3>سفارشی</h3>
+            <h3>دلخواه خودتان</h3>
             <p class="scenario__tag">تنظیم دستی</p>
-            <p>هر بخش را جداگانه روشن یا خاموش کنید.</p>
+            <p>هر بخشی را که می‌خواهید روشن کنید و بقیه را مخفی بگذارید.</p>
           </article>
         </div>
       </div>
@@ -239,50 +240,50 @@
     <section class="features" id="features" aria-labelledby="features-title">
       <div class="wrap">
         <header class="section-head reveal">
-          <h2 id="features-title">امکانات اصلی</h2>
-          <p>از ثبت دانش‌آموز تا کارنامه و شهریه — برای مدرسه و آموزشگاه.</p>
+          <h2 id="features-title">روزمره‌ی مدرسه را پوشش می‌دهد</h2>
+          <p>همان کارهایی که هر روز با آن‌ها سر و کار دارید — بدون پیچیدگی اضافه.</p>
         </header>
 
         <div class="feat-groups">
           <div class="feat-group reveal">
             <h3 class="feat-group__title">
               <svg width="20" height="20"><use href="#i-finance"/></svg>
-              مالی و شهریه
+              پول و شهریه
             </h3>
             <ul class="feat-cards">
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-tuition"/></svg></span>
                 <div>
-                  <strong>شهریه و رسید</strong>
-                  <span>پرداخت کامل یا اقساط با رسید</span>
+                  <strong>گرفتن شهریه</strong>
+                  <span>یکجا یا قسطی — با رسید برای والدین</span>
                 </div>
               </li>
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-alert"/></svg></span>
                 <div>
-                  <strong>پیگیری بدهکاران</strong>
-                  <span>اقساط عقب‌افتاده در یک نگاه</span>
+                  <strong>کی بدهکار است؟</strong>
+                  <span>اقساط عقب‌افتاده را سریع ببینید</span>
                 </div>
               </li>
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-payroll"/></svg></span>
                 <div>
-                  <strong>حقوق پرسنل</strong>
-                  <span>فیش ماهانه یا ساعتی</span>
+                  <strong>حقوق معلمان و پرسنل</strong>
+                  <span>فیش ماهانه یا بر اساس ساعت تدریس</span>
                 </div>
               </li>
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-chart"/></svg></span>
                 <div>
                   <strong>درآمد و هزینه</strong>
-                  <span>حسابداری ساده مدرسه</span>
+                  <span>بفهمید پول مدرسه از کجا آمده و کجا رفته</span>
                 </div>
               </li>
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-sms"/></svg></span>
                 <div>
                   <strong>پیامک یادآوری</strong>
-                  <span>شهریه و اقساط به‌موقع</span>
+                  <span>به والدین شهریه و قسط را یادآوری کنید</span>
                 </div>
               </li>
             </ul>
@@ -291,49 +292,49 @@
           <div class="feat-group reveal">
             <h3 class="feat-group__title">
               <svg width="20" height="20"><use href="#i-class"/></svg>
-              آموزشی
+              کلاس و آموزش
             </h3>
             <ul class="feat-cards">
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-students"/></svg></span>
                 <div>
-                  <strong>دانش‌آموزان</strong>
-                  <span>ثبت و مدیریت کامل</span>
+                  <strong>لیست دانش‌آموزان</strong>
+                  <span>نام، کلاس و اطلاعات تماس در یک جا</span>
                 </div>
               </li>
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-calendar"/></svg></span>
                 <div>
                   <strong>برنامه هفتگی</strong>
-                  <span>زنگ یا ساعت شروع کلاس</span>
+                  <span>با زنگ مدرسه یا ساعت شروع کلاس</span>
                 </div>
               </li>
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-spark"/></svg></span>
                 <div>
-                  <strong>تولید خودکار برنامه</strong>
-                  <span>چینش هوشمند جلسات</span>
+                  <strong>ساخت خودکار برنامه</strong>
+                  <span>برنامه را بدون چیدن دستی آماده کنید</span>
                 </div>
               </li>
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-check"/></svg></span>
                 <div>
                   <strong>حضور و غیاب</strong>
-                  <span>حاضر، غایب، تأخیر، موجه</span>
+                  <span>حاضر، غایب، تأخیر یا غیبت موجه</span>
                 </div>
               </li>
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-report"/></svg></span>
                 <div>
-                  <strong>کارنامه</strong>
-                  <span>میان‌ترم، پایان‌ترم یا دوره دلخواه</span>
+                  <strong>ثبت نمره و کارنامه</strong>
+                  <span>میان‌ترم، پایان‌ترم یا هر دوره‌ای که بخواهید</span>
                 </div>
               </li>
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-print"/></svg></span>
                 <div>
                   <strong>چاپ کارنامه</strong>
-                  <span>یک دانش‌آموز یا کل کلاس</span>
+                  <span>برای یک نفر یا کل کلاس</span>
                 </div>
               </li>
             </ul>
@@ -342,49 +343,49 @@
           <div class="feat-group reveal">
             <h3 class="feat-group__title">
               <svg width="20" height="20"><use href="#i-dashboard"/></svg>
-              مدیریت و گزارش
+              کار روزانه مدیر
             </h3>
             <ul class="feat-cards">
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-dashboard"/></svg></span>
                 <div>
-                  <strong>داشبورد</strong>
-                  <span>خلاصه وضعیت مدرسه</span>
+                  <strong>صفحه اول خلاصه</strong>
+                  <span>وضعیت امروز مدرسه را یک‌جا ببینید</span>
                 </div>
               </li>
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-staff"/></svg></span>
                 <div>
-                  <strong>پرسنل و معلمان</strong>
-                  <span>مدیریت نیروی انسانی</span>
+                  <strong>معلمان و پرسنل</strong>
+                  <span>اطلاعات همکاران را مرتب نگه دارید</span>
                 </div>
               </li>
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-sun"/></svg></span>
                 <div>
-                  <strong>تعطیلات و جبرانی</strong>
-                  <span>جایگزینی جلسات ازدست‌رفته</span>
+                  <strong>تعطیلات و کلاس جبرانی</strong>
+                  <span>جلسات ازدست‌رفته را جبران کنید</span>
                 </div>
               </li>
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-chart"/></svg></span>
                 <div>
-                  <strong>گزارش‌ها</strong>
-                  <span>آموزشی و مالی با خروجی</span>
+                  <strong>گزارش گرفتن</strong>
+                  <span>گزارش مالی و آموزشی آماده برای چاپ یا خروجی</span>
                 </div>
               </li>
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-backup"/></svg></span>
                 <div>
-                  <strong>پشتیبان‌گیری</strong>
-                  <span>ذخیره و بازگردانی اطلاعات</span>
+                  <strong>پشتیبان از اطلاعات</strong>
+                  <span>کپی بگیرید و اگر لازم شد برگردانید</span>
                 </div>
               </li>
               <li>
                 <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-rtl"/></svg></span>
                 <div>
-                  <strong>فارسی و شمسی</strong>
-                  <span>رابط راست‌چین کامل</span>
+                  <strong>کاملاً فارسی</strong>
+                  <span>منو، متن و تاریخ شمسی — آشنا و خوانا</span>
                 </div>
               </li>
             </ul>
@@ -398,16 +399,16 @@
         <div class="install__copy reveal">
           <p class="install__eyebrow">
             <svg width="18" height="18"><use href="#i-windows"/></svg>
-            مخصوص ویندوز
+            روی کامپیوتر ویندوز
           </p>
-          <h2 id="install-title">نصب یک‌مرحله‌ای</h2>
+          <h2 id="install-title">نصبش سخت نیست</h2>
           <p>
-            فایل Setup را اجرا کنید، تأیید ویندوز را بپذیرید، و از منوی Start یا میانبر
-            میزکار وارد شوید.
+            فایل را دانلود کنید، باز کنید و تأیید کنید. بعد از نصب، از میزکار یا منوی
+            شروع ویندوز وارد برنامه شوید — مثل بقیه برنامه‌ها.
           </p>
           <ol class="install__steps">
-            <li><b>۱</b> دانلود Setup</li>
-            <li><b>۲</b> تأیید نصب</li>
+            <li><b>۱</b> دانلود</li>
+            <li><b>۲</b> نصب</li>
             <li><b>۳</b> شروع کار</li>
           </ol>
         </div>
@@ -417,7 +418,7 @@
             <svg class="win-card__logo" width="48" height="48"><use href="#i-windows"/></svg>
             <p>Kosha-Setup.exe</p>
             <div class="win-card__bar"><i></i></div>
-            <span>نصب در چند ثانیه</span>
+            <span>چند دقیقه بیشتر طول نمی‌کشد</span>
           </div>
         </div>
       </div>
@@ -425,16 +426,16 @@
 
     <section class="cta" aria-labelledby="cta-title">
       <div class="wrap cta__inner reveal">
-        <h2 id="cta-title">آماده شروع هستید؟</h2>
-        <p>آخرین نسخه کوشا را از گیت‌هاب دریافت کنید.</p>
+        <h2 id="cta-title">از همین امروز امتحان کنید</h2>
+        <p>آخرین نسخه را دانلود کنید و روی کامپیوتر مدرسه نصب کنید.</p>
         <a class="btn btn--solid btn--lg" href="https://github.com/sepehrio/kosha/releases/latest/download/Kosha-Setup.exe">
           <svg class="ico" width="18" height="18"><use href="#i-download"/></svg>
-          دانلود Kosha-Setup.exe
+          دانلود برنامه کوشا
         </a>
         <p class="cta__note">
-          یا از
-          <a href="https://github.com/sepehrio/kosha/releases/latest">صفحه آخرین ریلیز</a>
-          نسخه را ببینید.
+          نسخه‌های قبلی را هم می‌توانید در
+          <a href="https://github.com/sepehrio/kosha/releases/latest">صفحه دانلودها</a>
+          ببینید.
         </p>
       </div>
     </section>
@@ -442,13 +443,13 @@
 
   <footer class="footer">
     <div class="wrap footer__inner">
-      <p class="footer__ask">سوال دارید؟ در
-        <a href="https://github.com/sepehrio/kosha/issues">Issues گیت‌هاب</a>
-        بپرسید.
+      <p class="footer__ask">سوالی دارید؟ در
+        <a href="https://github.com/sepehrio/kosha/issues">صفحه پرسش‌ها</a>
+        بپرسید؛ خوشحال می‌شویم کمک کنیم.
       </p>
       <p class="footer__copy">
-        <a href="https://github.com/sepehrio/kosha">sepehrio/kosha</a>
-        · کوشا — مدیریت مدرسه و آموزشگاه
+        <a href="https://github.com/sepehrio/kosha">کوشا در گیت‌هاب</a>
+        · برای مدیران مدارس، آموزشگاه‌ها، معلمان و اساتید
       </p>
     </div>
   </footer>
