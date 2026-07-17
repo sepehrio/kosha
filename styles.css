@@ -283,9 +283,32 @@ a:hover {
   color: var(--ink-soft);
 }
 
+/* —— Scenarios shot —— */
+.scenarios {
+  padding: 4.5rem 0 1rem;
+  background: var(--paper);
+}
+
+.shot {
+  margin: 0 auto;
+  max-width: 960px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 50px rgba(7, 21, 37, 0.12);
+  background: var(--white);
+}
+
+.shot img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
+}
+
 /* —— Features —— */
 .features {
-  padding: 4.75rem 0 5rem;
+  padding: 3.5rem 0 5rem;
   background:
     radial-gradient(ellipse 60% 40% at 100% 0%, rgba(20, 184, 166, 0.08), transparent 55%),
     var(--paper);
@@ -529,6 +552,7 @@ a:hover {
   }
 
   .problem,
+  .scenarios,
   .features,
   .install,
   .cta {
