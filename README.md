@@ -1,9 +1,6 @@
-# کوشا — دانلود نصب‌کننده
+﻿# کوشا — سامانه مدیریت مدرسه و آموزشگاه
 
-این ریپو فقط برای **فایل‌های نصبی و بروز‌رسانی** برنامه کوشا است.
-
-## دانلود آخرین نسخه
-
+- **صفحه معرفی:** https://sepehrio.github.io/kosha/
 - **لینک ثابت Setup:** [Kosha-Setup.exe](https://github.com/sepehrio/kosha/releases/latest/download/Kosha-Setup.exe)
 - **صفحه آخرین ریلیز:** [releases/latest](https://github.com/sepehrio/kosha/releases/latest)
 
