@@ -7,7 +7,6 @@
   <meta name="description" content="کوشا سامانه مدیریت مدرسه و آموزشگاه برای مدیران و منشی‌ها. دانش‌آموز، شهریه، نمرات، حضور و حقوق — همه در یک نرم‌افزار ویندوزی فارسی." />
   <meta property="og:title" content="کوشا — سامانه مدیریت مدرسه و آموزشگاه" />
   <meta property="og:description" content="اگر هنوز با اکسل و دفتر جداگانه کار می‌کنید، کوشا همه را یکجا جمع می‌کند." />
-  <meta property="og:image" content="assets/dashboard.png" />
   <meta property="og:locale" content="fa_IR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +14,84 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-dashboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/>
+    </symbol>
+    <symbol id="i-students" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+    </symbol>
+    <symbol id="i-class" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+    </symbol>
+    <symbol id="i-staff" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+    </symbol>
+    <symbol id="i-tuition" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M12 15h4"/>
+    </symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+    </symbol>
+    <symbol id="i-payroll" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15h6"/><path d="M9 11h2"/>
+    </symbol>
+    <symbol id="i-finance" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+    </symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+    </symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><path d="m5.6 5.6 2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+    </symbol>
+    <symbol id="i-report" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h2"/><path d="M8 17h8"/><path d="M14 13h2"/>
+    </symbol>
+    <symbol id="i-print" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/>
+    </symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+    </symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/>
+    </symbol>
+    <symbol id="i-sms" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </symbol>
+    <symbol id="i-backup" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+    </symbol>
+    <symbol id="i-rtl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 6h16"/><path d="M4 12h10"/><path d="M4 18h14"/><path d="m15 9 3 3-3 3"/>
+    </symbol>
+    <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+    </symbol>
+    <symbol id="i-grad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+    </symbol>
+    <symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M16 6h.01M8 10h.01M16 10h.01M8 14h.01M16 14h.01"/>
+    </symbol>
+    <symbol id="i-apps" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
+    </symbol>
+    <symbol id="i-windows" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M3 5.5 10.5 4.3v7.2H3V5.5zm8.2-1.4L21 2.5v9H11.2V4.1zM3 13.5h7.5v7.2L3 19.5v-6zm8.2 0H21v9l-9.8-1.4v-7.6z"/>
+    </symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+    </symbol>
+  </svg>
+
   <header class="topbar">
     <div class="wrap topbar__inner">
       <a class="brand" href="#top">کوشا</a>
@@ -22,16 +99,20 @@
         <a href="#scenarios">سناریو</a>
         <a href="#features">امکانات</a>
         <a href="#install">نصب</a>
-        <a class="btn btn--sm btn--solid" href="https://github.com/sepehrio/kosha/releases/latest/download/Kosha-Setup.exe">دانلود</a>
+        <a class="btn btn--sm btn--solid" href="https://github.com/sepehrio/kosha/releases/latest/download/Kosha-Setup.exe">
+          <svg class="ico" width="16" height="16"><use href="#i-download"/></svg>
+          دانلود
+        </a>
       </nav>
     </div>
   </header>
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-brand">
-      <div class="hero__glow" aria-hidden="true"></div>
-      <div class="wrap hero__grid">
-        <div class="hero__copy">
+      <div class="hero__orb hero__orb--a" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--b" aria-hidden="true"></div>
+      <div class="wrap hero__layout">
+        <div class="hero__copy reveal">
           <p class="hero__brand" id="hero-brand">کوشا</p>
           <h1 class="hero__title">آمده است</h1>
           <p class="hero__lead">
@@ -40,104 +121,314 @@
           </p>
           <div class="hero__actions">
             <a class="btn btn--solid btn--lg" href="https://github.com/sepehrio/kosha/releases/latest/download/Kosha-Setup.exe">
+              <svg class="ico" width="18" height="18"><use href="#i-download"/></svg>
               دانلود برای ویندوز
             </a>
             <a class="btn btn--ghost btn--lg" href="#features">مشاهده امکانات</a>
           </div>
           <p class="hero__meta">نصب یک‌مرحله‌ای · تاریخ شمسی · رابط راست‌چین</p>
         </div>
-      </div>
-      <div class="hero__visual">
-        <div class="hero__frame">
-          <img
-            src="assets/dashboard.png"
-            alt="نمای داشبورد کوشا: خلاصه مالی، یادداشت مدیر و وضعیت امروز مدرسه"
-            width="1440"
-            height="900"
-            loading="eager"
-          />
+
+        <div class="hero__stage reveal reveal--delay" aria-hidden="true">
+          <div class="mock">
+            <aside class="mock__side">
+              <div class="mock__logo">کوشا</div>
+              <div class="mock__school">مدرسه نمونه</div>
+              <ul class="mock__nav">
+                <li class="is-active"><span></span>داشبورد</li>
+                <li><span></span>دانش‌آموزان</li>
+                <li><span></span>شهریه</li>
+                <li><span></span>حضور و غیاب</li>
+                <li><span></span>کارنامه</li>
+              </ul>
+            </aside>
+            <div class="mock__main">
+              <div class="mock__bar">
+                <strong>داشبورد</strong>
+                <span class="mock__pill">مانده شهریه</span>
+              </div>
+              <div class="mock__banner">
+                <div class="mock__banner-top">
+                  <span>نسبت وصول شهریه</span>
+                  <b class="mock__pct" data-count="68">۰٪</b>
+                </div>
+                <div class="mock__track"><i style="--w:68%"></i></div>
+              </div>
+              <div class="mock__stats">
+                <div class="mock__stat mock__stat--red"><b data-count="2">۰</b><span>عقب‌افتاده</span></div>
+                <div class="mock__stat mock__stat--amber"><b data-count="6">۰</b><span>بدهکار</span></div>
+                <div class="mock__stat mock__stat--teal"><b data-count="3">۰</b><span>اقساط باز</span></div>
+              </div>
+              <div class="mock__today">
+                <div><svg width="18" height="18"><use href="#i-check"/></svg><span>حضور امروز</span></div>
+                <div><svg width="18" height="18"><use href="#i-calendar"/></svg><span>جلسات برنامه</span></div>
+                <div><svg width="18" height="18"><use href="#i-sun"/></svg><span>تعطیلات</span></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="problem" aria-labelledby="problem-title">
-      <div class="wrap problem__inner">
+      <div class="wrap problem__inner reveal">
         <h2 id="problem-title">همه چیز در یک جا</h2>
         <p>
           اگر هنوز دانش‌آموزان، شهریه، نمرات و حقوق را با چند فایل اکسل و دفتر جداگانه
           مدیریت می‌کنید، کوشا همه را یکجا جمع می‌کند.
         </p>
+        <div class="problem__chips" aria-hidden="true">
+          <span class="chip chip--off">اکسل شهریه</span>
+          <span class="chip chip--off">دفتر حضور</span>
+          <span class="chip chip--off">فایل نمرات</span>
+          <span class="chip chip--on">
+            <svg width="14" height="14"><use href="#i-spark"/></svg>
+            کوشا
+          </span>
+        </div>
       </div>
     </section>
 
     <section class="scenarios" id="scenarios" aria-labelledby="scenarios-title">
       <div class="wrap">
-        <header class="section-head">
+        <header class="section-head reveal">
           <h2 id="scenarios-title">مناسب مدرسه و آموزشگاه</h2>
-          <p>
-            سناریو را انتخاب کنید تا فقط بخش‌های لازم فعال شوند —
-            ساده، ابتدایی، راهنمایی و دبیرستان، آموزشگاه، پیشرفته یا سفارشی.
-          </p>
+          <p>سناریو را انتخاب کنید تا فقط بخش‌های لازم فعال شوند.</p>
         </header>
-        <figure class="shot">
-          <img
-            src="assets/scenarios.png"
-            alt="صفحه انتخاب نوع مدرسه و سناریو در کوشا: ساده، ابتدایی، راهنمایی و دبیرستان، آموزشگاه، پیشرفته و سفارشی"
-            width="1440"
-            height="900"
-            loading="lazy"
-          />
-        </figure>
+        <div class="scenario-grid">
+          <article class="scenario reveal">
+            <div class="scenario__icon"><svg width="26" height="26"><use href="#i-home"/></svg></div>
+            <h3>ساده</h3>
+            <p class="scenario__tag">مالی و پایه</p>
+            <p>دانش‌آموز، کلاس و شهریه — شروع سریع بدون برنامه و حضور.</p>
+          </article>
+          <article class="scenario reveal">
+            <div class="scenario__icon"><svg width="26" height="26"><use href="#i-students"/></svg></div>
+            <h3>مدرسه ابتدایی</h3>
+            <p class="scenario__tag">معلم کلاس</p>
+            <p>زنگ مدرسه، حضور و غیاب و کارنامه با معلم کلاس.</p>
+          </article>
+          <article class="scenario reveal">
+            <div class="scenario__icon"><svg width="26" height="26"><use href="#i-grad"/></svg></div>
+            <h3>راهنمایی / دبیرستان</h3>
+            <p class="scenario__tag">معلم هر درس</p>
+            <p>برنامه، حضور، تعطیلات، کارنامه و کلاس جبرانی.</p>
+          </article>
+          <article class="scenario scenario--active reveal">
+            <div class="scenario__icon"><svg width="26" height="26"><use href="#i-building"/></svg></div>
+            <h3>آموزشگاه</h3>
+            <p class="scenario__tag">ساعت شروع کلاس</p>
+            <p>برنامه بر اساس ساعت شروع و اصطلاحات قابل تنظیم.</p>
+          </article>
+          <article class="scenario reveal">
+            <div class="scenario__icon"><svg width="26" height="26"><use href="#i-apps"/></svg></div>
+            <h3>پیشرفته</h3>
+            <p class="scenario__tag">همه بخش‌ها</p>
+            <p>تمام امکانات برای مجتمع‌های آموزشی بزرگ.</p>
+          </article>
+          <article class="scenario reveal">
+            <div class="scenario__icon"><svg width="26" height="26"><use href="#i-sliders"/></svg></div>
+            <h3>سفارشی</h3>
+            <p class="scenario__tag">تنظیم دستی</p>
+            <p>هر بخش را جداگانه روشن یا خاموش کنید.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="features" id="features" aria-labelledby="features-title">
       <div class="wrap">
-        <header class="section-head">
+        <header class="section-head reveal">
           <h2 id="features-title">امکانات اصلی</h2>
           <p>از ثبت دانش‌آموز تا کارنامه و شهریه — برای مدرسه و آموزشگاه.</p>
         </header>
 
-        <ul class="feature-list">
-          <li>داشبورد خلاصه وضعیت مدرسه</li>
-          <li>ثبت و مدیریت دانش‌آموزان</li>
-          <li>پایه‌ها و کلاس‌ها</li>
-          <li>مدیریت پرسنل و معلمان</li>
-          <li>شهریه (پرداخت کامل یا اقساط) + رسید</li>
-          <li>پیگیری بدهکاران و اقساط عقب‌افتاده</li>
-          <li>حقوق و فیش پرسنل (ماهانه / ساعتی)</li>
-          <li>درآمد و هزینه مدرسه</li>
-          <li>درس‌ها و برنامه هفتگی</li>
-          <li>تولید خودکار برنامه هفتگی</li>
-          <li>حضور و غیاب (حاضر، غایب، تأخیر، موجه)</li>
-          <li>تعطیلات و کلاس‌های جبرانی</li>
-          <li>کارنامه: میان‌ترم، پایان‌ترم یا دوره دلخواه</li>
-          <li>صدور و چاپ کارنامه برای یک دانش‌آموز یا کل کلاس</li>
-          <li>گزارش‌های آموزشی و مالی (با خروجی)</li>
-          <li>سناریو برای مدرسه ساده، ابتدایی، راهنمایی یا دبیرستان</li>
-          <li>پیامک یادآوری شهریه و اقساط</li>
-          <li>پشتیبان‌گیری و بازگردانی اطلاعات</li>
-          <li>تاریخ شمسی و رابط فارسی راست‌چین</li>
-        </ul>
+        <div class="feat-groups">
+          <div class="feat-group reveal">
+            <h3 class="feat-group__title">
+              <svg width="20" height="20"><use href="#i-finance"/></svg>
+              مالی و شهریه
+            </h3>
+            <ul class="feat-cards">
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-tuition"/></svg></span>
+                <div>
+                  <strong>شهریه و رسید</strong>
+                  <span>پرداخت کامل یا اقساط با رسید</span>
+                </div>
+              </li>
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-alert"/></svg></span>
+                <div>
+                  <strong>پیگیری بدهکاران</strong>
+                  <span>اقساط عقب‌افتاده در یک نگاه</span>
+                </div>
+              </li>
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-payroll"/></svg></span>
+                <div>
+                  <strong>حقوق پرسنل</strong>
+                  <span>فیش ماهانه یا ساعتی</span>
+                </div>
+              </li>
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-chart"/></svg></span>
+                <div>
+                  <strong>درآمد و هزینه</strong>
+                  <span>حسابداری ساده مدرسه</span>
+                </div>
+              </li>
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-sms"/></svg></span>
+                <div>
+                  <strong>پیامک یادآوری</strong>
+                  <span>شهریه و اقساط به‌موقع</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="feat-group reveal">
+            <h3 class="feat-group__title">
+              <svg width="20" height="20"><use href="#i-class"/></svg>
+              آموزشی
+            </h3>
+            <ul class="feat-cards">
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-students"/></svg></span>
+                <div>
+                  <strong>دانش‌آموزان</strong>
+                  <span>ثبت و مدیریت کامل</span>
+                </div>
+              </li>
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-calendar"/></svg></span>
+                <div>
+                  <strong>برنامه هفتگی</strong>
+                  <span>زنگ یا ساعت شروع کلاس</span>
+                </div>
+              </li>
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-spark"/></svg></span>
+                <div>
+                  <strong>تولید خودکار برنامه</strong>
+                  <span>چینش هوشمند جلسات</span>
+                </div>
+              </li>
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-check"/></svg></span>
+                <div>
+                  <strong>حضور و غیاب</strong>
+                  <span>حاضر، غایب، تأخیر، موجه</span>
+                </div>
+              </li>
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-report"/></svg></span>
+                <div>
+                  <strong>کارنامه</strong>
+                  <span>میان‌ترم، پایان‌ترم یا دوره دلخواه</span>
+                </div>
+              </li>
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-print"/></svg></span>
+                <div>
+                  <strong>چاپ کارنامه</strong>
+                  <span>یک دانش‌آموز یا کل کلاس</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="feat-group reveal">
+            <h3 class="feat-group__title">
+              <svg width="20" height="20"><use href="#i-dashboard"/></svg>
+              مدیریت و گزارش
+            </h3>
+            <ul class="feat-cards">
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-dashboard"/></svg></span>
+                <div>
+                  <strong>داشبورد</strong>
+                  <span>خلاصه وضعیت مدرسه</span>
+                </div>
+              </li>
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-staff"/></svg></span>
+                <div>
+                  <strong>پرسنل و معلمان</strong>
+                  <span>مدیریت نیروی انسانی</span>
+                </div>
+              </li>
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-sun"/></svg></span>
+                <div>
+                  <strong>تعطیلات و جبرانی</strong>
+                  <span>جایگزینی جلسات ازدست‌رفته</span>
+                </div>
+              </li>
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-chart"/></svg></span>
+                <div>
+                  <strong>گزارش‌ها</strong>
+                  <span>آموزشی و مالی با خروجی</span>
+                </div>
+              </li>
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-backup"/></svg></span>
+                <div>
+                  <strong>پشتیبان‌گیری</strong>
+                  <span>ذخیره و بازگردانی اطلاعات</span>
+                </div>
+              </li>
+              <li>
+                <span class="feat-cards__ico"><svg width="22" height="22"><use href="#i-rtl"/></svg></span>
+                <div>
+                  <strong>فارسی و شمسی</strong>
+                  <span>رابط راست‌چین کامل</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="install" id="install" aria-labelledby="install-title">
-      <div class="wrap install__inner">
-        <p class="install__eyebrow">مخصوص ویندوز</p>
-        <h2 id="install-title">نصب یک‌مرحله‌ای</h2>
-        <p>
-          فایل Setup را اجرا کنید، تأیید ویندوز را بپذیرید، و از منوی Start یا میانبر
-          میزکار وارد شوید. بدون پیچیدگی، آماده کار.
-        </p>
+      <div class="wrap install__layout">
+        <div class="install__copy reveal">
+          <p class="install__eyebrow">
+            <svg width="18" height="18"><use href="#i-windows"/></svg>
+            مخصوص ویندوز
+          </p>
+          <h2 id="install-title">نصب یک‌مرحله‌ای</h2>
+          <p>
+            فایل Setup را اجرا کنید، تأیید ویندوز را بپذیرید، و از منوی Start یا میانبر
+            میزکار وارد شوید.
+          </p>
+          <ol class="install__steps">
+            <li><b>۱</b> دانلود Setup</li>
+            <li><b>۲</b> تأیید نصب</li>
+            <li><b>۳</b> شروع کار</li>
+          </ol>
+        </div>
+        <div class="install__visual reveal reveal--delay" aria-hidden="true">
+          <div class="win-card">
+            <div class="win-card__dots"><i></i><i></i><i></i></div>
+            <svg class="win-card__logo" width="48" height="48"><use href="#i-windows"/></svg>
+            <p>Kosha-Setup.exe</p>
+            <div class="win-card__bar"><i></i></div>
+            <span>نصب در چند ثانیه</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="cta" aria-labelledby="cta-title">
-      <div class="wrap cta__inner">
+      <div class="wrap cta__inner reveal">
         <h2 id="cta-title">آماده شروع هستید؟</h2>
         <p>آخرین نسخه کوشا را از گیت‌هاب دریافت کنید.</p>
         <a class="btn btn--solid btn--lg" href="https://github.com/sepehrio/kosha/releases/latest/download/Kosha-Setup.exe">
+          <svg class="ico" width="18" height="18"><use href="#i-download"/></svg>
           دانلود Kosha-Setup.exe
         </a>
         <p class="cta__note">
@@ -161,5 +452,7 @@
       </p>
     </div>
   </footer>
+
+  <script src="main.js" defer></script>
 </body>
 </html>
